@@ -1,0 +1,23 @@
+{
+  "type": "record",
+  "name": "CarEngineTypeAvro",
+  "namespace": "de.haebich.example.car.messages",
+  "fields": [
+    {
+      "name": "horsePower",
+      "type": "int"
+    },
+    {
+      "name": "fuelType",
+      "type": "string"
+    },
+    {
+      "name": "cylinders",
+      "type": ["null", "int"]
+    },
+    {
+      "name": "transmissionType",
+      "type": "string"
+    }
+  ]
+}

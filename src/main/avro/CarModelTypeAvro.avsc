@@ -1,0 +1,23 @@
+{
+  "type": "record",
+  "name": "CarModelTypeAvro",
+  "namespace": "de.haebich.example.car.messages",
+  "fields": [
+    {
+      "name": "manufacturingCompany",
+      "type": "string"
+    },
+    {
+      "name": "model",
+      "type": "string"
+    },
+    {
+      "name": "specialModel",
+      "type": ["null", "string"]
+    },
+    {
+      "name": "numberOfDoors",
+      "type": "int"
+    }
+  ]
+}

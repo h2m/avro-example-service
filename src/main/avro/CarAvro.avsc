@@ -1,0 +1,39 @@
+{
+  "type": "record",
+  "name": "CarAvro",
+  "namespace": "de.haebich.example.car.messages",
+  "fields": [
+    {
+      "name": "timestamp",
+      "type": "long"
+    },
+    {
+      "name": "vehicleIdentificationNumber",
+      "type": "string"
+    },
+    {
+      "name": "manufacturingDate",
+      "type": "string"
+    },
+    {
+      "name": "mileage",
+      "type": "string"
+    },
+    {
+      "name": "color",
+      "type": "string"
+    },
+    {
+      "name": "accidentFree",
+      "type": "boolean"
+    },
+    {
+      "name": "carModelType",
+      "type": "de.haebich.example.car.messages.CarModelTypeAvro"
+    },
+    {
+      "name": "carEngineType",
+      "type": "de.haebich.example.car.messages.CarEngineTypeAvro"
+    }
+  ]
+}
