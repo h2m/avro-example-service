@@ -1,4 +1,4 @@
-package de.haebich.avroexample
+package de.haebich.examples.car
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

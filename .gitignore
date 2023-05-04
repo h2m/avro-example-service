@@ -1,3 +1,4 @@
+*.avro
 HELP.md
 .gradle
 build/

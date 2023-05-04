@@ -14,6 +14,9 @@ version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_17
 
 repositories {
+	maven {
+		url = uri("https://packages.confluent.io/maven/")
+	}
 	mavenCentral()
 }
 
@@ -22,6 +25,8 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.springframework.kafka:spring-kafka")
 	implementation("org.apache.avro:avro:1.11.1")
+	implementation("io.confluent:kafka-avro-serializer:7.2.1")
+	implementation("io.confluent:kafka-json-serializer:7.2.1")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.springframework.kafka:spring-kafka-test")
 }
